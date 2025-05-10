@@ -1,0 +1,19 @@
+{
+  "name": "tea-manager",
+  "version": "1.0.0",
+  "description": "a simple manager for different tea",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express",
+    "tea"
+  ],
+  "author": "Pratik Kumbhar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
