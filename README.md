@@ -89,9 +89,13 @@ A RESTful API built with Express.js to manage a collection of teas.
 
 - **Files:**
   - `index.js`: The main application file.
+  - `logger.js`: Custom logger for logging requests and events.
+  - `.env`: Environment variables file.
+  - `app.log`: Log file for storing application logs.
 
 - **How it Works:**
   - Provides endpoints to perform CRUD operations on a tea collection.
+  - Logs HTTP requests using Morgan and Winston.
   - Endpoints:
     - `GET /teas`: Retrieve all teas.
     - `GET /teas/:id`: Retrieve a specific tea by ID.
@@ -100,9 +104,19 @@ A RESTful API built with Express.js to manage a collection of teas.
     - `DELETE /teas/:id`: Delete a tea by ID.
 
 - **How to Run:**
-  ```bash
-  node 02_express/index.js
-  ```
+  1. Create a `.env` file in the `02_express/` directory with the following content:
+     ```
+     PORT=3000
+     ```
+  2. Install dependencies:
+     ```bash
+     npm install
+     ```
+  3. Start the server:
+     ```bash
+     node index.js
+     ```
+  The server listens on `http://127.0.0.1:3000`.
 
 ## Requirements
  - Node.js installed on your system.
