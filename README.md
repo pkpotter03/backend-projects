@@ -57,6 +57,53 @@ A Node.js application that logs events to a file and monitors system memory usag
     node eventLogger/logger.js
     ```
 
+### 4. Web Server (`01_web_server/`)
+
+A simple web server implemented in both Node.js and Bun.
+
+- **Files:**
+  - `server-node.js`: Web server using Node.js.
+  - `server-bun.js`: Web server using Bun.
+
+- **How it Works:**
+  - Serves different responses based on the URL path.
+  - Handles routes like `/`, `/ice-tea` (Node.js), and `/tea` (Bun).
+  - Returns a 404 response for unknown routes.
+
+- **How to Run:**
+  - Using Node.js:
+    ```bash
+    node 01_web_server/server-node.js
+    ```
+    The server listens on `http://127.0.0.1:3000`.
+
+  - Using Bun:
+    ```bash
+    bun run 01_web_server/server-bun.js
+    ```
+    The server listens on `http://127.0.0.1:3000`.
+
+### 5. Express Tea API (`02_express/`)
+
+A RESTful API built with Express.js to manage a collection of teas.
+
+- **Files:**
+  - `index.js`: The main application file.
+
+- **How it Works:**
+  - Provides endpoints to perform CRUD operations on a tea collection.
+  - Endpoints:
+    - `GET /teas`: Retrieve all teas.
+    - `GET /teas/:id`: Retrieve a specific tea by ID.
+    - `POST /teas`: Add a new tea.
+    - `PUT /teas/:id`: Update an existing tea by ID.
+    - `DELETE /teas/:id`: Delete a tea by ID.
+
+- **How to Run:**
+  ```bash
+  node 02_express/index.js
+  ```
+
 ## Requirements
  - Node.js installed on your system.
 
