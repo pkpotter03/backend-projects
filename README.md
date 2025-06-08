@@ -1,4 +1,4 @@
-# Backend Projects
+# Backend Practices
 
 This repository contains basic beginner backend practices demonstrating various functionalities, including a simple HTTP server, a to-do list manager, and an event logger.
 
