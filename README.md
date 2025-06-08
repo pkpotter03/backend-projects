@@ -1,6 +1,6 @@
 # Backend Projects
 
-This repository contains multiple backend projects demonstrating various functionalities, including a simple HTTP server, a to-do list manager, and an event logger.
+This repository contains basic beginner backend projects demonstrating various functionalities, including a simple HTTP server, a to-do list manager, and an event logger.
 
 ## Project Structure
 
