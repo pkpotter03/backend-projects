@@ -3,9 +3,9 @@ import fs from "fs"
 
 // Configuration
 cloudinary.config({
-    cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
-    api_key: process.env.CLOUDINARY_API_KEY,
-    api_secret: process.env.CLOUDINARY_API_SECRET
+    cloud_name: "dx2q6pybq",
+    api_key: 961689958899457,
+    api_secret: "r34f0ei7Q0RJ_WDIG7rVDilFWD0"
 });
 
 const uploadOnCloudinary = async (localFilePath) => {
@@ -25,4 +25,15 @@ const uploadOnCloudinary = async (localFilePath) => {
     }
 }
 
-export { uploadOnCloudinary }
+const deleteFromCloudinary = async (publicId) => {
+    try{
+        const result = await cloudinary.uploader.destroy(publicId)
+        console.log("deleted from cloudinary. Public id ", publicId)
+
+    } catch (error) {
+        console.log("Error while deleting from cloudinary", error)
+        return null
+    }
+} 
+
+export { uploadOnCloudinary, deleteFromCloudinary }
